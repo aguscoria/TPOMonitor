@@ -10,5 +10,19 @@
 	<classpathentry kind="lib" path="C:/Users/Coria/Downloads/hibernate-search-5.4.0.Final/dist/hibernate-search-engine-5.4.0.Final.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Coria/Downloads/hibernate-search-5.4.0.Final/dist/hibernate-search-orm-5.4.0.Final.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Coria/Documents/apache-tomcat-7.0.57/lib/annotations-api.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/antlr-2.7.6.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/commons-collections-3.1.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/ejb3-persistence.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/hibernate3.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/javassist-3.4.GA.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/jta-1.1.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/jtds-1.2.5.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/slf4j-api-1.5.6.jar"/>
+	<classpathentry kind="lib" path="/TPO_Sistema/lib/slf4j-simple-1.5.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Coria/Downloads/javax.ejb-3.1.1-sources.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

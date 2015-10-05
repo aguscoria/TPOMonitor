@@ -17,7 +17,7 @@ public class Cliente implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private long id;
+	private long idCliente;
 	private String coordenada;
 	private long dni;
 	private String nombre;
@@ -26,12 +26,12 @@ public class Cliente implements Serializable{
 	/*GETTERS Y SETTERS*/
 	
 	@Id @GeneratedValue(strategy=GenerationType.AUTO)
-	public long getId() {
-		return id;
+	public long getIdCliente() {
+		return idCliente;
 	}
 	
-	public void setId(long id) {
-		this.id = id;
+	public void setId(long idCliente) {
+		this.idCliente = idCliente;
 	}
 	
 	public String getNombre() {
