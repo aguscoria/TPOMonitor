@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Dependencies: org.jboss.resteasy.resteasy-jaxrs,org.apache.httpcomponents,org.jboss.remote-naming, org.hornetq
+
