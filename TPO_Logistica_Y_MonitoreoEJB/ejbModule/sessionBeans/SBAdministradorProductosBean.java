@@ -5,7 +5,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import dominio.Producto;
+import dominio.Articulo;
 
 /**
  * Session Bean implementation class AdministradorProductosBean
@@ -21,7 +21,7 @@ public class SBAdministradorProductosBean implements SBAdministradorProductos {
     }
 
 	@Override
-	public void agregarNuevoProducto(Producto producto) {
+	public void agregarNuevoProducto(Articulo producto) {
 		manager.persist(producto);
 	}
 

@@ -10,7 +10,7 @@ import dominio.DespachoVentaPreventivo;
 import dominio.InformeAuditoria;
 import dominio.OrdenDespacho;
 import dominio.Portal;
-import dominio.Producto;
+import dominio.Articulo;
 import dominio.Venta;
 
 @Remote
@@ -18,7 +18,7 @@ public interface FachadaLogYMon {
 	
 	/* METODOS DE REST */
 	
-	public void generarNuevoProducto(Producto producto);
+	public void generarNuevoProducto(Articulo producto);
 	
 	/* METODOS DE WEB-SERVICE */
 	
@@ -42,7 +42,7 @@ public interface FachadaLogYMon {
 	
 	public ArrayList<Despacho> obtenerDespachosActivos();
 	
-	public ArrayList<Producto> obtenerProductosBestSeller();
+	public ArrayList<Articulo> obtenerProductosBestSeller();
 	
 	public ArrayList<InformeAuditoria> cargarInformesAuditoriaNearOnLine();
 	

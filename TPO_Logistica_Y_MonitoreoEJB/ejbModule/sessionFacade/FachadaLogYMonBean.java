@@ -17,7 +17,7 @@ import dominio.DespachoVentaPreventivo;
 import dominio.InformeAuditoria;
 import dominio.OrdenDespacho;
 import dominio.Portal;
-import dominio.Producto;
+import dominio.Articulo;
 import dominio.Venta;
 
 @Stateless
@@ -62,7 +62,7 @@ public class FachadaLogYMonBean implements FachadaLogYMon {
 	}
 	
 	@Override
-	public ArrayList<Producto> obtenerProductosBestSeller(){
+	public ArrayList<Articulo> obtenerProductosBestSeller(){
 		return administradorBestSellers.obtenerProductosBestSeller();
 	}
 
@@ -92,7 +92,7 @@ public class FachadaLogYMonBean implements FachadaLogYMon {
 	}
 
 	@Override
-	public void generarNuevoProducto(Producto producto) {
+	public void generarNuevoProducto(Articulo producto) {
 		administradorProductos.agregarNuevoProducto(producto);
 	}
 

@@ -12,17 +12,17 @@ import javax.jms.ObjectMessage;
 import sessionFacade.FachadaLogYMon;
 import tpo.ia.vos.VOArticulo;
 import dominio.InformeAuditoria;
-import dominio.Producto;
+import dominio.Articulo;
 
 @MessageDriven(activationConfig = {
 		@ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
 		@ActivationConfigProperty(propertyName = "destination", propertyValue = "queue/colaArticulo") }, mappedName = "queue/colaArticulo")
-public class MDBAñadirArticulo implements MessageListener {
+public class MDBAÃ±adirArticulo implements MessageListener {
 
 	@EJB
 	FachadaLogYMon fachadaLogYMon;
 
-	public MDBAñadirArticulo() {
+	public MDBAÃ±adirArticulo() {
 	}
 
 	public void onMessage(Message message) {
@@ -32,25 +32,25 @@ public class MDBAñadirArticulo implements MessageListener {
 		try {
 			ObjectMessage objectMessage = (ObjectMessage) message;
 			VOArticulo articuloNuevo = (VOArticulo) objectMessage.getObject();
-			Producto producto = new Producto();
-			producto.setCantidadVentas(0);
-			producto.setPrecio(articuloNuevo.getPrecio());
-			producto.setDescripcion(articuloNuevo.getDescripcion());
-			producto.setCodigo(articuloNuevo.getCodigo());
+			Articulo articulo = new Articulo();
+			articulo.setCantidadVentas(0);
+			articulo.setPrecio(articuloNuevo.getPrecio());
+			articulo.setDescripcion(articuloNuevo.getDescripcion());
+			articulo.setCodigo(articuloNuevo.getCodigo());
 			fachadaLogYMon.generarNuevoProducto(producto);
 			InformeAuditoria informeAuditoria = new InformeAuditoria();
 			informeAuditoria.setFecha(new Date());
-			String descripcionInformeAuditoria = "Se agregó el producto"
-					+ producto.getDescripcion() + " cuyo codigo es "
-					+ producto.getCodigo() + ".";
+			String descripcionInformeAuditoria = "Se agregï¿½ el producto"
+					+ articulo.getDescripcion() + " cuyo codigo es "
+					+ articulo.getCodigo() + ".";
 			informeAuditoria.setDescripcion(descripcionInformeAuditoria);
 			fachadaLogYMon.generarInformeAuditoria(informeAuditoria);
-			System.out.println("----------- Se persistio el artículo "
-					+ producto.getDescripcion() + " -----------");
+			System.out.println("----------- Se persistio el artï¿½culo "
+					+ articulo.getDescripcion() + " -----------");
 		} catch (Exception e) {
 			e.printStackTrace();
 			System.out
-					.println("----------- Error al persistir el artículo -----------");
+					.println("----------- Error al persistir el artï¿½culo -----------");
 		}
 	}
 

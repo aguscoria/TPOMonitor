@@ -7,5 +7,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/Users/Coria/Downloads/hibernate-search-5.4.0.Final/dist/hibernate-search-engine-5.4.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Coria/Downloads/hibernate-search-5.4.0.Final/dist/hibernate-search-orm-5.4.0.Final.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Coria/Documents/apache-tomcat-7.0.57/lib/annotations-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

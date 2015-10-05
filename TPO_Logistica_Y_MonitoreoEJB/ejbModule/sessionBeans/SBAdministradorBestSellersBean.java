@@ -6,7 +6,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import dominio.Producto;
+import dominio.Articulo;
 
 @Stateless
 public class SBAdministradorBestSellersBean implements
@@ -19,9 +19,9 @@ public class SBAdministradorBestSellersBean implements
 	}
 
 	@SuppressWarnings("unchecked")
-	public ArrayList<Producto> obtenerProductosBestSeller() {
-		ArrayList<Producto> productosBS = new ArrayList<Producto>();
-		ArrayList<Producto> lista = (ArrayList<Producto>) manager
+	public ArrayList<Articulo> obtenerProductosBestSeller() {
+		ArrayList<Articulo> productosBS = new ArrayList<Articulo>();
+		ArrayList<Articulo> lista = (ArrayList<Articulo>) manager
 				.createQuery(
 						"SELECT p FROM Producto p ORDER BY p.cantidadVentas desc, p.id")
 				.setMaxResults(10).getResultList();

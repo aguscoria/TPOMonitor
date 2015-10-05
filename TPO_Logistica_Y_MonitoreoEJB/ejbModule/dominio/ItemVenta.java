@@ -19,7 +19,7 @@ public class ItemVenta implements Serializable{
 	
 	private long id;
 	private long cantidad;
-	private Producto producto;
+	private Articulo producto;
 	
 	/*GETTERS Y SETTERS*/
 	
@@ -42,11 +42,11 @@ public class ItemVenta implements Serializable{
 	
 	@ManyToOne
 	@JoinColumn(name = "id_Producto")
-	public Producto getProducto() {
+	public Articulo getProducto() {
 		return producto;
 	}
 	
-	public void setProducto(Producto producto) {
+	public void setProducto(Articulo producto) {
 		this.producto = producto;
 	}
 	

@@ -22,7 +22,7 @@ import dominio.DespachoVentaPreventivo;
 import dominio.ItemVenta;
 import dominio.OrdenDespacho;
 import dominio.Portal;
-import dominio.Producto;
+import dominio.Articulo;
 import dominio.Venta;
 
 @Stateless
@@ -55,7 +55,7 @@ public class SBAdministradorVentaBean implements SBAdministradorVenta {
 			return false;
 		List<ItemVenta> itemsVenta = new ArrayList<ItemVenta>();
 		for (VOItemVenta item : itemsVOVenta) {
-			Producto producto = (Producto) manager
+			Articulo producto = (Articulo) manager
 					.createQuery(
 							"select p from Producto p where p.codigo = :codProd")
 					.setMaxResults(1)
@@ -98,7 +98,7 @@ public class SBAdministradorVentaBean implements SBAdministradorVenta {
 				.split(",")[1]);
 		DespachoVentaPreventivo despachoVentaPreventivo = new DespachoVentaPreventivo();
 		despachoVentaPreventivo.setVenta(venta);
-		// Busco el despacho más cercano al usuario segun sus cordenadas
+		// Busco el despacho mï¿½s cercano al usuario segun sus cordenadas
 		float dif = -1;
 		for (Despacho despacho : despachosActivos) {
 			float corDespX = Float

@@ -2,11 +2,11 @@ package sessionBeans;
 
 import javax.ejb.Local;
 
-import dominio.Producto;
+import dominio.Articulo;
 
 @Local
 public interface SBAdministradorProductos {
 
-	public void agregarNuevoProducto(Producto producto);
+	public void agregarNuevoProducto(Articulo producto);
 	
 }

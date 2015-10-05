@@ -16,7 +16,7 @@ import org.codehaus.jackson.map.ObjectWriter;
 
 import sessionBeans.SBAdministradorBestSellers;
 import tpo.ia.vos.VORanking;
-import dominio.Producto;
+import dominio.Articulo;
 
 
 public class REnviarBestSeller {

@@ -4,11 +4,11 @@ import java.util.ArrayList;
 
 import javax.ejb.Local;
 
-import dominio.Producto;
+import dominio.Articulo;
 
 @Local
 public interface SBAdministradorBestSellers {
 	
-	public ArrayList<Producto> obtenerProductosBestSeller();
+	public ArrayList<Articulo> obtenerProductosBestSeller();
 	
 }
